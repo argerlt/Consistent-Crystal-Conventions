@@ -1,4 +1,4 @@
-# Consistent-Crystal-Conventions
+# Consistent Crystal Conventions
 
 This repository is a first-pass attempt at creating a self-consistent and documented
 set of conventions for handling crystallographic objects in material science, as well
@@ -35,11 +35,19 @@ Python, which is converted into Latex and HTML using ReadtheDocs, and is availab
 
 The tools in the examples use the included `xtal_code`, whhich can be installed with ``pip``
 
-.. code block:: python
+.. code block:: bash
+    
+    pip install -e ./
 
-    pip install -e ./Standard_crystal_transforms
+Or using `pip` within a `conda` environment:
 
-*TODO: test this*
+.. code block:: bash
+
+    conda create -n standard_xtals python=3.12
+    conda activate standard_xtals
+    cd Consistent-Crystal-Conventions
+    pip install -e ./
+    
 
 Starting References and Software
 ================================

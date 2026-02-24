@@ -3,4 +3,7 @@
 
 __version__ = "0.1.0"
 
-__credits__ = []
+__credits__ = [
+    "Austin Gerlt",
+    
+    ]
