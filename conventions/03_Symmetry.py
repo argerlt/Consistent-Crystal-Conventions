@@ -1,5 +1,5 @@
 """
-Symmetry
+03 Symmetry
 ========
 
 This example doesn't do much, it just makes a simple plot

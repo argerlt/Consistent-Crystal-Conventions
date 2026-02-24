@@ -1,5 +1,5 @@
 """
-Vectors and Transforms
+02 Vectors and Transforms
 ======================
 
 This example doesn't do much, it just makes a simple plot

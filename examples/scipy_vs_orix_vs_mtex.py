@@ -1,6 +1,6 @@
 """
-This is my example script
-=========================
+scipyvs orix vs mtex
+====================
 
 This example doesn't do much, it just makes a simple plot
 """

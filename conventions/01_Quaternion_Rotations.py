@@ -1,6 +1,6 @@
 """
-Quaternion Rotations
-=========================
+01 Quaternion Rotations
+====================
 
 This example doesn't do much, it just makes a simple plot
 """

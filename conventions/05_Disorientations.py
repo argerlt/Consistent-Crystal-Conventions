@@ -1,5 +1,5 @@
 """
-Disorientations
+05 Disorientations
 ===============
 
 This example doesn't do much, it just makes a simple plot
