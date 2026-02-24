@@ -1,4 +1,5 @@
-# Consistent Crystal Conventions
+Consistent Crystal Conventions
+==========================
 
 This repository is a first-pass attempt at creating a self-consistent and documented
 set of conventions for handling crystallographic objects in material science, as well
