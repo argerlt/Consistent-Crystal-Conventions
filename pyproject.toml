@@ -1,0 +1,28 @@
+## Written using https://packaging.python.org/en/latest/guides/writing-pyproject-toml/, using ORIX as a guide
+
+# Define build backend (hatch) for making a PyPI package
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xtal_code"
+authors = [{name="Austin Gerlt"},] #TODO: make dynamic and add collaborators
+maintainers = [{name="Austin Gerlt",email="austin.gerlt@nist.gov"},]
+description = "a first-pass attempt at creating a self-consistent standard for describing common crystallographic objects"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+#TODO: decide on license. Ideally BSD/CC combo where possible # https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license-and-license-files
+dynamic = ["version"] # These are set by hatchling
+requires-python = ">=3.12"
+#TODO: should actually import modules I use for clarity, just just rely on orix grabbing them all...
+dependencies = [
+    "orix[dev] >= 0.14", # This also grabs all the documentation (ie, sphinx and sphinx gallery) and testing packages(pytest, etc).
+    "hatch",
+    "pre-commit                     >= 1.16",
+]
+
+[tool.hatch.version]
+path= "xtal_code/__init__.py"
+
+# TODO: Add autoformatter, maybe [tool.coverage.run]
+#TODO: add urls: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#urls
