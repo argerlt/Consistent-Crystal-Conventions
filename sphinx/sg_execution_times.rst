@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:00.867** total execution time for 13 files **from all galleries**:
+**00:00.001** total execution time for 13 files **from all galleries**:
 
 .. container::
 
@@ -32,40 +32,40 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_examples_irreversible_disorientations.py` (``../examples/irreversible_disorientations.py``)
-     - 00:00.862
-     - 0.0
-   * - :ref:`sphx_glr_examples_Row_vs_Column_Major.py` (``../examples/Row_vs_Column_Major.py``)
+   * - :ref:`sphx_glr_conventions_00-Basic_Definitions_and_Visualizations.py` (``../conventions/00-Basic_Definitions_and_Visualizations.py``)
      - 00:00.001
      - 0.0
-   * - :ref:`sphx_glr_conventions_04_Crystal_lattices.py` (``../conventions/04_Crystal_lattices.py``)
+   * - :ref:`sphx_glr_conventions_01-Quaternion_Rotations.py` (``../conventions/01-Quaternion_Rotations.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_conventions_00_Basic_Definitions_and_Visualizations.py` (``../conventions/00_Basic_Definitions_and_Visualizations.py``)
+   * - :ref:`sphx_glr_conventions_02-vectors_and_transforms.py` (``../conventions/02-vectors_and_transforms.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_conventions_02_vectors_and_transforms.py` (``../conventions/02_vectors_and_transforms.py``)
+   * - :ref:`sphx_glr_conventions_03-Symmetry.py` (``../conventions/03-Symmetry.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_conventions_01_Quaternion_Rotations.py` (``../conventions/01_Quaternion_Rotations.py``)
+   * - :ref:`sphx_glr_conventions_04-Crystal_lattices.py` (``../conventions/04-Crystal_lattices.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_conventions_03_Symmetry.py` (``../conventions/03_Symmetry.py``)
-     - 00:00.000
-     - 0.0
-   * - :ref:`sphx_glr_conventions_05_Disorientations.py` (``../conventions/05_Disorientations.py``)
+   * - :ref:`sphx_glr_conventions_05-Disorientations.py` (``../conventions/05-Disorientations.py``)
      - 00:00.000
      - 0.0
    * - :ref:`sphx_glr_examples_Active_vs_Passive.py` (``../examples/Active_vs_Passive.py``)
      - 00:00.000
      - 0.0
+   * - :ref:`sphx_glr_examples_Euler_triplets.py` (``../examples/Euler_triplets.py``)
+     - 00:00.000
+     - 0.0
    * - :ref:`sphx_glr_examples_Orientation_inversion.py` (``../examples/Orientation_inversion.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_Row_vs_Column_Major.py` (``../examples/Row_vs_Column_Major.py``)
      - 00:00.000
      - 0.0
    * - :ref:`sphx_glr_examples_ambiguous_fundamental_zones.py` (``../examples/ambiguous_fundamental_zones.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_examples_Euler_triplets.py` (``../examples/Euler_triplets.py``)
+   * - :ref:`sphx_glr_examples_irreversible_disorientations.py` (``../examples/irreversible_disorientations.py``)
      - 00:00.000
      - 0.0
    * - :ref:`sphx_glr_examples_scipy_vs_orix_vs_mtex.py` (``../examples/scipy_vs_orix_vs_mtex.py``)

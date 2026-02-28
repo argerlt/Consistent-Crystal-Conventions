@@ -1,8 +1,7 @@
 """
-Active and Passive Transforms
-=============================
+Basic Definitions and Visualizations
+========================================
 
-This example doesn't do much, it just makes a simple plot
 """
 
 # %%

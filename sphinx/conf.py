@@ -134,6 +134,7 @@ sphinx_gallery_conf = {
     "backreferences_dir": "reference/generated",
     "examples_dirs": ["../examples","../conventions"],
     "filename_pattern": "^((?!sgskip).)*$",
+    'within_subsection_order': "FileNameSortKey",
     "gallery_dirs": ["examples", "conventions"],
 }
 autosummary_generate = True
