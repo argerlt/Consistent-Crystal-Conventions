@@ -20,11 +20,11 @@ sys.path.append("../")
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Consistent Crystal Conventions'
-copyright = '2026, Austin Gerlt'
-author = 'Austin Gerlt'
+project = "Consistent Crystal Conventions"
+copyright = "2026 TBD"
+author = "Austin Gerlt"
 release = xtl_version
-html_title = 'Consistent Xtals'
+html_title = "Consistent Crystal Conventions"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -39,16 +39,15 @@ extensions = [
     "sphinx_gallery.gen_gallery",
     "numpydoc",  # Must be loaded after autodoc
 ]
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
+templates_path = ["_templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-html_static_path = ['_static']
+html_theme = "alabaster"
+html_static_path = ["_static"]
 
 exclude_patterns = [
     "_build",
@@ -76,7 +75,7 @@ html_theme_options = {
 }
 html_static_path = ["_static"]
 
-#TODO: maybe get logo?
+# TODO: maybe get logo?
 
 
 # TODO: Bibtex? # https://sphinxcontrib-bibtex.readthedocs.io
@@ -91,7 +90,7 @@ autodoc_default_options = {
     "show-inheritance": True,
 }
 
-#TODO: NumpyDoc?
+# TODO: NumpyDoc?
 
 # -- matplotlib.sphinxext.plot_directive
 # https://matplotlib.org/stable/api/sphinxext_plot_directive_api.html
@@ -126,15 +125,15 @@ SphinxDocString._str_examples = _str_examples
 
 html_sidebars = {
     "index": ["sidebar-nav-bs", "sidebar-ethical-ads"],
-   "**": ["sidebar-nav-bs", "sidebar-ethical-ads"]
+    "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
 }
 # -- Sphinx-Gallery
 # https://sphinx-gallery.github.io
 sphinx_gallery_conf = {
     "backreferences_dir": "reference/generated",
-    "examples_dirs": ["../examples","../conventions"],
+    "examples_dirs": ["../examples", "../conventions"],
     "filename_pattern": "^((?!sgskip).)*$",
-    'within_subsection_order': "FileNameSortKey",
+    "within_subsection_order": "FileNameSortKey",
     "gallery_dirs": ["examples", "conventions"],
 }
 autosummary_generate = True

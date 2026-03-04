@@ -50,7 +50,7 @@ Computation times
    * - :ref:`sphx_glr_conventions_05-Disorientations.py` (``../conventions/05-Disorientations.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_examples_Active_vs_Passive.py` (``../examples/Active_vs_Passive.py``)
+   * - :ref:`sphx_glr_examples_01_active_passive.py` (``../examples/01_active_passive.py``)
      - 00:00.000
      - 0.0
    * - :ref:`sphx_glr_examples_Euler_triplets.py` (``../examples/Euler_triplets.py``)
