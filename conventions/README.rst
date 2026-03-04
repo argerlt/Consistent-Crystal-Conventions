@@ -4,7 +4,8 @@
 Conventions
 ===========
 
-A gallery of files, intended to be read sequentially. They begin by defining the three basic crystallographic objects:
+A Series of pages intended to be read sequentially, which build up a potential crystallographic convention. They begin by defining
+three basic crystallographic objects:
 
  - Vectors
  - Transforms

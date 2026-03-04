@@ -1,87 +1,18 @@
 """
-Active and Passive Transforms
-=============================
-
-This example doesn't do much, it just makes a simple plot
+Quaternions as Linear Transforms
+================================
 """
 
 # %%
-# This is a section header
-# ------------------------
-# This is the first section!
-# The `#%%` signifies to Sphinx-Gallery that this text should be rendered as
-# reST and if using one of the above IDE/plugin's, also signifies the start of a
-# 'code block'.
-
-# This line won't be rendered as reST because there's a space after the last block.
-myvariable = 2
-print("my variable is {}".format(myvariable))
-# This is the end of the 'code block' (if using an above IDE). All code within
-# this block can be easily executed all at once.
-
-# %%
-# This is another section header
-# ------------------------------
-#
-# In the built documentation, it will be rendered as reST after the code above!
-# This is also another code block.
-
-print("my variable plus 2 is {}".format(myvariable + 2))
+# Things to discuss
+# -----------------
+# basic outline:
+#   - start with complex numbers as "reshapers" of 2D plane
+#   - show how :math:`sin(\theta) +{i}cos(\theta)`` is a 2D object that moves 2D objects
+#   - For 2D, its equally mathematically difficult to just swith to 2x2 matrix, which is more inuitive
+#   - Hamilton problem: equivalent doesn't exist for 3D. However, it does for 4D, and is efficient, lower error, and semi-human readable
+#   - Formulation predates LA, and the correct way to write "q followed by p" is q*p (THIS IS A HUGE DEAL AND A SOURCE OF ERROR!)
+#   - Also, since quat 4d but our world are 3D, easiest method is to do half of quat rote out of hyperplane, then second half back in, hence the hamiltonian
+#   - :math:`(pq)^{-1} = q^{-1}[^-1]`. ie, switching passive to active reverses ordering. 
 
 
-# %%
-import matplotlib.pyplot as plt
-import numpy as np
-
-from mpl_toolkits.mplot3d import axes3d
-
-fig = plt.figure()
-ax = fig.add_subplot(projection="3d")
-
-# Grab some test data.
-X, Y, Z = axes3d.get_test_data(0.05)
-
-# Plot a basic wireframe.
-ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
-
-plt.show()
-# %%
-
-import matplotlib.pyplot as plt
-
-from mpl_toolkits.mplot3d import axes3d
-
-fig = plt.figure()
-ax = fig.add_subplot(projection="3d")
-
-# Grab some example data and plot a basic wireframe.
-X, Y, Z = axes3d.get_test_data(0.05)
-ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
-
-# Set the axis labels
-ax.set_xlabel("x")
-ax.set_ylabel("y")
-ax.set_zlabel("z")
-
-# Rotate the axes and update
-for angle in range(0, 360 * 4 + 1):
-    # Normalize the angle to the range [-180, 180] for display
-    angle_norm = (angle + 180) % 360 - 180
-
-    # Cycle through a full rotation of elevation, then azimuth, roll, and all
-    elev = azim = roll = 0
-    if angle <= 360:
-        elev = angle_norm
-    elif angle <= 360 * 2:
-        azim = angle_norm
-    elif angle <= 360 * 3:
-        roll = angle_norm
-    else:
-        elev = azim = roll = angle_norm
-
-    # Update the axis view and title
-    ax.view_init(elev, azim, roll)
-    plt.title("Elevation: %d°, Azimuth: %d°, Roll: %d°" % (elev, azim, roll))
-
-    plt.draw()
-    plt.pause(0.001)
