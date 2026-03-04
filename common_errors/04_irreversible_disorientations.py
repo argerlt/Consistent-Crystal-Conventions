@@ -2,10 +2,8 @@
 A Demonstration of the Information Loss in Symmetry Reduction
 =============================================================
 #TODO: convert from latex to python, and simplfy
-The following was adapted from Chapter 3 of Austin Gerlt's 2024 thesis, Chapter 3,is a first pass draft of a 2023 jupyter notebook that originally started this entire project
-
+The following is a copy/paste of chapter 3 of my thesis, and needs a LOT of cleanup, but has all the basic code.
 """
-
 
 import numpy as np
 import matplotlib.pyplot as plt

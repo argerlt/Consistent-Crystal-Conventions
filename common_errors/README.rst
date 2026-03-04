@@ -1,7 +1,8 @@
-.. _examples:
+.. _common_errors:
 
-========
-Examples
-========
+========================
+Common Convention Errors
+========================
 
-A Gallery of demonstrations of common convention errors and confusions in crystallogrpahy.
+A gallery of commonly seen errors when defining new crystallographic conventions or adopting code and
+methods from an existing project's convention.

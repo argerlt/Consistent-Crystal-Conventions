@@ -1,8 +1,8 @@
 """
-01 Quaternion Rotations
-====================
+Converting between common existing conventions
+==============================================
 
-This example doesn't do much, it just makes a simple plot
+Collected reference for how to convert between these three codes. Note the weirdness with Euler triplets.
 """
 
 # %%

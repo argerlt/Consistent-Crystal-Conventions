@@ -8,8 +8,8 @@ Consistent Crystal Conventions Home Page
 
     user/index.rst
     conventions/index.rst
-    examples/index.rst
-    reference/index.rst
+    common_errors/index.rst
+    other/index.rst
 
 
 This repository is a first-pass attempt at creating a self-consistent and documented
