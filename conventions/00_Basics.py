@@ -43,27 +43,17 @@ import matplotlib.pyplot as plt
 # Linear Transformations
 # ======================
 # A "transform" in this context is an operation that re-maps every point :math:`v \in V^n` to another point in :math:`V^n`.
-# A linear transformation :math:`L`has the further constraint that::math:
+# A linear transformation :math:`L`has the further constraint that :math::
 #    L(1 2 )
+#    
 
 
 
-
-
-
-
-
-
-# %%
-# This is a section header
-# ------------------------
-#
-
+ a = 1+1
 
 # %%
 # This is a section header?
 # =========================
-#
 # banana
 # This is the first section!
 # The `#%%` signifies to Sphinx-Gallery that this text should be rendered as

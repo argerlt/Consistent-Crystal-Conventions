@@ -131,9 +131,9 @@ html_sidebars = {
 # https://sphinx-gallery.github.io
 sphinx_gallery_conf = {
     "backreferences_dir": "reference/generated",
-    "examples_dirs": ["../examples", "../conventions"],
+    "examples_dirs": ["../conventions", "../common_errors", "../other"],
     "filename_pattern": "^((?!sgskip).)*$",
     "within_subsection_order": "FileNameSortKey",
-    "gallery_dirs": ["examples", "conventions"],
+    "gallery_dirs": ["Conventions","Common Errors", "Addendums"],
 }
 autosummary_generate = True

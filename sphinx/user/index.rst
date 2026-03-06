@@ -15,4 +15,5 @@ User guide
     :maxdepth: 3
 
     ../conventions/index.rst
-    ../examples/index.rst
+    ../common_errors/index.rst
+    ../other/index.rst

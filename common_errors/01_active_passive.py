@@ -66,3 +66,7 @@ plt.show()
 
 #     plt.draw()
 #     plt.pause(0.001)
+
+
+
+#TODO: add pointers to how this is "solved" in the conventions folder

@@ -17,10 +17,10 @@ This is one of the more out there ideas of mine, need some feedback.
 #   - this also compounds with column-vs-row major ordering, increaing the confusion about "transposing" or "inverting" or "complex conjugate"
 #   - Also, the thing that "undoes" an orientation is NOT an orientation, it does a different action and can only be applied to a differing set of objects. it should have it's own name.
 #   - So, I propose "Orientation" and "Alignment".
-#   - Passive Orientation: CS <-- xyx
-#   - Passive Alignment: xyz <-- CS
-#   - Active Orientation: CS --> xyx
-#   - Active Alignment CS --> xyx
+#   - Passive Orientation:   CS <-- xyx
+#   - Passive Alignment:     xyz <-- CS
+#   - Active Orientation:    xyz --> CS
+#   - Active Alignment       CS --> xyx
 #   - This also clears up a bunch of REALLY common misorientation problems (elaborate)
 
 myvariable = 2

@@ -13,4 +13,6 @@ Euler Triplets
 # Should we use crystal2ref and ref2crystal? these also imply left-to-right solving though (frustrating issue in MTEX now, even.),
 # but maybe that's fine. 
 
-print("my variable is {}".format(myvariable))
+import numpy as np
+
+print(1)

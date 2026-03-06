@@ -16,7 +16,7 @@ from orix.quaternion import Misorientation
 
 ###############################################################################
 # define two grain using an axis and a rotation angle
-# ---------
+# ---------------------------------------------------
 grain_a = Rotation.from_axes_angles([-1, 2, 3], 25*np.pi/180)
 grain_b = Rotation.from_axes_angles([4, -1, 7], 140*np.pi/180)
 # define two symmetry groups. The first is the 3-fold 
@@ -36,27 +36,27 @@ all_m_ab = Rotation(SG_a.outer(m_ab*SG_b))
 
 ###############################################################################
 # Calculate the orientation and misorientation fundamental zones
-# ---------
+# --------------------------------------------------------------
 ori_fz_a = OrientationRegion.from_symmetry(SG_a)
 ori_fz_b = OrientationRegion.from_symmetry(SG_b)
 mis_fz_ab = OrientationRegion.from_symmetry(SG_a, SG_b)
 
 ###############################################################################
 # find which representations are inside each of the fundamental zones
-# ---------
+# -------------------------------------------------------------------
 m_in_a = all_m_ab[all_m_ab < ori_fz_a]
 m_in_b = all_m_ab[all_m_ab < ori_fz_b]
 disorientation_ab = all_m_ab[all_m_ab < mis_fz_ab]
 
 ###############################################################################
-# find all the representations that share the minimum angle.
-# ---------
+# find all the representations that share the minimum angle
+# ---------------------------------------------------------
 min_angle = all_m_ab.angle.min() + 1E-6
 min_angle_m = all_m_ab[all_m_ab.angle <= min_angle]
 
 ###############################################################################
-# attempt to recover grain_a from the disorientation.
-# ---------
+# attempt to recover grain_a from the disorientation
+# --------------------------------------------------
 not_grain_a = disorientation_ab*~grain_b*SG_b
 # symmeterize it to show it is not symmetrically 
 # equivalent to grain_a
@@ -64,14 +64,14 @@ all_not_grain_a = Rotation(SG_a.outer(not_grain_a*SG_b).flatten())
 
 ###############################################################################
 # get the wireframes for plotting the fundamental zones
-# ---------
+# -----------------------------------------------------
 D3_fz_bounds = ori_fz_a.get_plot_data().to_rodrigues().xyz
 C6_fz_bounds = ori_fz_b.get_plot_data().to_rodrigues().xyz
 D3_C6_fz_bounds = mis_fz_ab.get_plot_data().to_rodrigues().xyz
 
 ###############################################################################
 # plot everything
-# ---------
+# ---------------
 fig, ax = _setup_rotation_plot(projection='3d')
 ax.plot_wireframe(*D3_fz_bounds, color='k', linewidth=0.5, label=r"$D_3$ Fundamental Zone")
 ax.plot_wireframe(*D3_C6_fz_bounds, color='r', linewidth=2, label=r"$D_3$-$C_6$ Fundamental Zone")
@@ -83,7 +83,7 @@ ax.set_aspect('equal')
 
 ###############################################################################
 # Plot it again, but with the attempted inversion of the disorentations
-# ---------
+# ---------------------------------------------------------------------
 fig, ax = _setup_rotation_plot(projection='3d')
 ax.plot_wireframe(*D3_fz_bounds, color='k', linewidth=0.5, label=r"$D_3$ Fundamental Zone")
 ax.plot_wireframe(*D3_C6_fz_bounds, color='r', linewidth=2, label=r"$D_3$-$C_6$ Fundamental Zone")
