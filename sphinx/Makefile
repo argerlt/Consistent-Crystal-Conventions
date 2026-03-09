@@ -21,7 +21,8 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)
-	rm -rf $(SOURCEDIR)/examples
-	rm -rf $(SOURCEDIR)/conventions
+	rm -rf $(SOURCEDIR)/Addendums
+	rm -rf $(SOURCEDIR)/CommonErrors
+	rm -rf $(SOURCEDIR)/Conventions
 	rm -rf $(SOURCEDIR)/reference/generated
 

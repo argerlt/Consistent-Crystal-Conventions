@@ -1,15 +1,13 @@
-========================================
-Consistent Crystal Conventions Home Page
-========================================
+==============================
+Consistent Crystal Conventions
+==============================
 
 .. toctree::
     :hidden:
     :titlesonly:
 
     user/index.rst
-    conventions/index.rst
-    common_errors/index.rst
-    other/index.rst
+    Conventions/index.rst
 
 
 This repository is a first-pass attempt at creating a self-consistent and documented

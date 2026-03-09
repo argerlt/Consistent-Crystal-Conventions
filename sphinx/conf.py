@@ -134,6 +134,6 @@ sphinx_gallery_conf = {
     "examples_dirs": ["../conventions", "../common_errors", "../other"],
     "filename_pattern": "^((?!sgskip).)*$",
     "within_subsection_order": "FileNameSortKey",
-    "gallery_dirs": ["Conventions","Common Errors", "Addendums"],
+    "gallery_dirs": ["Conventions","CommonErrors", "Addendums"],
 }
 autosummary_generate = True
