@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:00.001** total execution time for 14 files **from all galleries**:
+**00:00.003** total execution time for 14 files **from all galleries**:
 
 .. container::
 
@@ -33,7 +33,7 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_Conventions_00_Basics.py` (``../conventions/00_Basics.py``)
-     - 00:00.001
+     - 00:00.003
      - 0.0
    * - :ref:`sphx_glr_Common Errors_01_active_passive.py` (``../common_errors/01_active_passive.py``)
      - 00:00.000
