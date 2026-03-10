@@ -4,16 +4,12 @@
 User guide
 ==========
 
-.. toctree::
-    :caption: Getting started
-    :maxdepth: 1
-
-    installation.rst
+TODO: Some words should go here
 
 .. toctree::
-    :caption: Documentation
-    :maxdepth: 3
-
-    ../Conventions/index.rst
-    ../CommonErrors/index.rst
-    ../Addendums/index.rst
+   :maxdepth: 2
+   
+   /user/installation.rst
+   /user/motivation.rst
+   /user/contributing.rst
+   /user/references.rst

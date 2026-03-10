@@ -4,12 +4,9 @@
 Conventions
 ===========
 
-A Series of pages intended to be read sequentially, which build up a potential crystallographic convention. They begin by defining
-three basic crystallographic objects:
+These conventions are intended to be read sequentially. Theb begin by redefining the concepts 
+of **Vectors**, **Transforms**, and **Symmetry**.
 
- - Vectors
- - Transforms
- - Symmetries
-  
-And build from there to define orientations, misorientations, disorientations, and miller indices as well as valid operations
-between them in a self-consistent manner.
+From these concepts, we gradually build up to more interesting topics such as  misorientations,
+disorientations, crystal vectors, and the various conventions for defining
+operations between them in a self-consistent manner.

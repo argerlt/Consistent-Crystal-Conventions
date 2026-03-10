@@ -7,57 +7,78 @@ Consistent Crystal Conventions
     :titlesonly:
 
     user/index.rst
-    Conventions/index.rst
+    conventions/index.rst
+    reference/index.rst
 
+A community-driven effort to create a consistent crystallographic convention for use in Material Science and related fields.
+See the :doc:`Motivation Page <user/motivation>` to learn more about the motivation behind this work.
+Visitors can navigate through the site using the buttons along the top header, or using the links below.
 
-This repository is a first-pass attempt at creating a self-consistent and documented
-set of conventions for handling crystallographic objects in material science, as well
-as examples and visualizations of common errors that occur differing standards interact.
+TODO: Add working quick links like dscribed `here <https://sphinx-design.readthedocs.io/en/furo-theme/grids.html>` 
 
-This work begins with the three basic objects in 3D space:
-   - Vectors
-   - Transforms
-   - Symmetry
 
 And builds up the decriptors needed for experimental tools such as EBSD, HEDM,
-and TEM, as well as crystallographic concepts like orientations, misorientations,
-and disorientations.
+.. See: https://sphinx-design.readthedocs.io/en/furo-theme/grids.html
+.. grid:: 3
 
-More details can be found on the `GitHub README page <www.github.com/argerlt/Consistent-Crystal-Conventions>`_.
+    .. grid-item-card::
+        :link: user/index
+        :link-type: doc
 
+        :octicon:`book;2em;sd-text-info`   User Guide
+        ^^^
 
-Collaboration
-=============
+        Installation, Contribution, References
 
-Conventions are more useful when more people participate in their creation. This project was
-made public in a rough initial state specifically so anyone who wants to can help in shaping it,
-and/or point out it's errors. 
+    .. grid-item-card::  
+        :link: conventions/index
+        :link-type: doc
 
-A knowledge of python is helpful, but users can also browse the #TODO ADD LINKS TO OTHER SECTIONS
-and read the examples and tutorials.
+        :octicon:`list-unordered;2em;sd-text-info`   Conventions
+        ^^^
 
-If interested, the best way to collaborate is to create a
-`Pull Request <https://github.com/argerlt/Consistent-Crystal-Conventions/pulls>`_ on GitHub. However, emails sent 
-to austin.gerlt@nist.gov are also a great way to communicate as well. If your input changes the code, you
-will be added to the contributors.
+        Proposed Conventions, Examples, and Common Errors
+    
+    .. grid-item-card::
+        :link:     reference/index
+        :link-type: doc
 
-
-Primary Resources
-=================
-%TODO: properly cite these sources.
-
-This work (especially in alpha) is heavily inspired by the following references. Anyone who finds this project usefule is
- ***STRONGLY*** encouraged to follow these links and cite them as appropriate in their own work.
-
-- `Crystallographic Texture and Group Representations <https://link.springer.com/book/10.1007/978-94-024-2158-3>`_ (Chi-Sing Man): Sections 1.1 and 1.2
-- `Structure of Materials <cambridge.org/highereducation/books/structure-of-materials/22A17D7856B8472E7B73B38F1147C0FD>`_ (Marc De Graef and Michael McHenry) Chapters 4-10
-- `International Tables for Crystallography, Volume A <https://it.iucr.org/A/>`_
-- `On three-dimensional Misorientation spaces <https://doi.org/10.1098/rspa.2017.0274>`_ (Robert Krakow et. al.)
+        :octicon:`code;2em;sd-text-info`   Python API
+        ^^^
+        
+        API reference for python code used in this work.
 
 
-Quick Links
+Quick Start
 ===========
-%TODO: Add working quick links like dscribed `here <https://sphinx-design.readthedocs.io/en/furo-theme/grids.html>` 
+This project is `hosted on GitHub <www.github.com/argerlt/Consistent-Crystal-Conventions>`_ and primarily uses Python and ReStructuredText. 
 
+The documentation you are reading is built using `Sphinx-Gallery <https://sphinx-gallery.github.io/stable/index.html>`_ and `The PyData Sphinx Theme <https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html>`_,
+and the website is hosted on `ReadtheDocs <https://about.readthedocs.com>`_ 
 
+Users familiar with these concepts can `clone the repository themselves <www.github.com/argerlt/Consistent-Crystal-Conventions>`_,
+though for convenience we suggest instead creating a conda environment:
+
+    .. code-block:: bash
+
+        git clone https://github.com/argerlt/Consistent-Crystal-Conventions.git
+        conda create -n ccc python=3.12
+        conda activate ccc
+        cd Consistent-Crystal-Conventions
+        pip install -e ./
+
+This is especially helpful when building the documentation via Sphinx:
+
+    .. code-block:: bash
+
+        cd sphinx
+        make clean
+        make html
+
+Which can then be viewed by opening :code:`sphinx/_build/html/index.html` in a web browser.
+
+Futher details can be found on the :doc:`Installation Page <user/installation>`
+
+If you are interested getting involved, see the :doc:`Collaboration Page <user/contributing>` for details on how to contribute, report errors, or 
+express concerns about one of the many subjective convention choices made as part of this work.
 
