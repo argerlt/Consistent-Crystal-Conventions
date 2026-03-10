@@ -17,7 +17,6 @@ Visitors can navigate through the site using the buttons along the top header, o
 TODO: Add working quick links like dscribed `here <https://sphinx-design.readthedocs.io/en/furo-theme/grids.html>` 
 
 
-And builds up the decriptors needed for experimental tools such as EBSD, HEDM,
 .. See: https://sphinx-design.readthedocs.io/en/furo-theme/grids.html
 .. grid:: 3
 
